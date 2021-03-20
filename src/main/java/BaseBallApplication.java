@@ -1,9 +1,8 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class BaseBallApplication {
     public static void main(String[] args) {
-        System.out.println("BaseBallApplication !!");
-        
+        BaseBallNumber baseBallNumber = new BaseBallNumber();
+        GameStatus gameStatus = new GameStatus();
+
+        Game game = new Game(baseBallNumber , gameStatus);
     }
 }
