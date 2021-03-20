@@ -3,6 +3,7 @@ import java.util.List;
 
 public class BaseBallApplication {
     public static void main(String[] args) {
-        System.out.println("BaseBallApplication");
+        System.out.println("BaseBallApplication !!");
+        
     }
 }
