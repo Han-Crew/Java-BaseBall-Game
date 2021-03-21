@@ -1,3 +1,5 @@
+package domain;
+
 public class GameStatus {
     private Status strike;
     private Status ball;
@@ -21,10 +23,45 @@ public class GameStatus {
         this.out.plus();
     }
 
+    public void clear() {
+        this.strike.clear();
+        this.ball.clear();
+        this.out.clear();
+    }
+
+    public int getStrikePoint() {
+        return this.strike.getPoint();
+    }
+
     @Override
     public String toString() {
         return strike.getPoint() + " " + strike.toString() + " , "
                 + ball.getPoint() + " " + ball.toString() + " , "
                 + out.getPoint() + " " + out.toString();
+    }
+
+    enum Status {
+        STRIKE(0),
+        BALL(0),
+        OUT(0);
+
+
+        private int point;
+
+        Status(int point) {
+            this.point = point;
+        }
+
+        public void plus() {
+            this.point++;
+        }
+
+        public int getPoint() {
+            return point;
+        }
+
+        public void clear() {
+            this.point = 0;
+        }
     }
 }
