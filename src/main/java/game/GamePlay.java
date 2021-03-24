@@ -17,12 +17,23 @@ public class GamePlay {
         System.out.println(baseBallNumbers.getBaseBallNumbers().toString());
         GameStatus gameStatus = new GameStatus();
 
-        for (int i=0; i < GAME_COUNT; i++) {
-            InputNumbers inputNumbers = new InputNumbers();
+        int count = 0;
+        while (count < GAME_COUNT) {
+            InputNumbers inputNumbers = null;
+
+            try {
+                inputNumbers = new InputNumbers();
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+                continue;
+            }
+
             ScoreValidator scoreValidator = new ScoreValidator(inputNumbers , gameStatus);
             scoreValidator.execute();
             gameStatusCheck(gameStatus);
             gameStatus.clear();
+
+            count++;
         }
 
         gameOver();

@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+import static domain.ExceptionType.*;
+
 public class InputNumbers {
     private final List<Integer> inputNumbers;
     private static final int INPUT_NUMBERS_SIZE = 3;
@@ -23,7 +25,7 @@ public class InputNumbers {
                     .collect(Collectors.toList());
             validateInputNumberSize(inputNumbers);
         } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("숫자만 입력하여야 합니다.");
+            throw new IllegalArgumentException(REQUIRED_NUMBER_TYPES.getMessage());
         }
 
         return inputNumbers;
@@ -31,7 +33,7 @@ public class InputNumbers {
 
     private void validateInputNumberSize(List<Integer> inputNumbers) {
         if (inputNumbers.size() != INPUT_NUMBERS_SIZE) {
-            throw new IllegalArgumentException("3개의 숫자만 입력할수 있습니다.");
+            throw new IllegalArgumentException(INVALID_INPUT_NUMBER_SIZE.getMessage());
         }
     }
 
