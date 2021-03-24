@@ -1,9 +1,9 @@
 package domain;
 
 public class GameStatus {
-    private Status strike;
-    private Status ball;
-    private Status out;
+    private final Status strike;
+    private final Status ball;
+    private final Status out;
 
     public GameStatus() {
         this.strike = Status.STRIKE;
