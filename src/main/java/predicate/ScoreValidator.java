@@ -10,12 +10,10 @@ import java.util.List;
 
 public class ScoreValidator {
     private final InputNumbers inputNumbers;
-    private final GameStatus gameStatus;
     private final List<ScorePredicate> scorePredicateList;
 
     public ScoreValidator(InputNumbers inputNumbers , GameStatus gameStatus) {
         this.inputNumbers = inputNumbers;
-        this.gameStatus = gameStatus;
         this.scorePredicateList = List.of(
                 new StrikePredicate(gameStatus),
                 new BallPredicate(gameStatus),

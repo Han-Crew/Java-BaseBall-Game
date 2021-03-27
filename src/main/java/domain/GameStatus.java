@@ -33,6 +33,14 @@ public class GameStatus {
         return this.strike.getPoint();
     }
 
+    public int getBallPoint() {
+        return this.ball.getPoint();
+    }
+
+    public int getOutPoint() {
+        return this.out.getPoint();
+    }
+
     @Override
     public String toString() {
         return strike.getPoint() + " " + strike.toString() + " , "
@@ -40,7 +48,7 @@ public class GameStatus {
                 + out.getPoint() + " " + out.toString();
     }
 
-    private enum Status {
+    enum Status {
         STRIKE(0),
         BALL(0),
         OUT(0);
