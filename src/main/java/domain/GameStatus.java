@@ -40,11 +40,10 @@ public class GameStatus {
                 + out.getPoint() + " " + out.toString();
     }
 
-    enum Status {
+    private enum Status {
         STRIKE(0),
         BALL(0),
         OUT(0);
-
 
         private int point;
 
