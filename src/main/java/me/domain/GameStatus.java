@@ -1,4 +1,4 @@
-package domain;
+package me.domain;
 
 public class GameStatus {
     private final Status strike;

@@ -1,9 +1,9 @@
-package game;
+package me.game;
 
-import domain.BaseBallNumbers;
-import domain.GameStatus;
-import domain.InputNumbers;
-import predicate.ScoreValidator;
+import me.domain.BaseBallNumbers;
+import me.domain.GameStatus;
+import me.domain.InputNumbers;
+import me.predicate.ScoreValidator;
 
 public class GamePlay {
     private final BaseBallNumbers baseBallNumbers = BaseBallNumbers.getInstance();
