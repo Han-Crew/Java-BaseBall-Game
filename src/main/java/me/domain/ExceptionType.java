@@ -1,4 +1,4 @@
-package domain;
+package me.domain;
 
 public enum ExceptionType {
     INVALID_INPUT_NUMBER_SIZE("3개의 숫자만 입력할 수 있습니다."),
