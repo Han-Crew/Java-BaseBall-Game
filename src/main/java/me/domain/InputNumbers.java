@@ -1,11 +1,11 @@
-package domain;
+package me.domain;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-import static domain.ExceptionType.*;
+import static me.domain.ExceptionType.*;
 
 public class InputNumbers {
     private final List<Integer> inputNumbers;

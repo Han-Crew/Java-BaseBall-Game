@@ -1,10 +1,10 @@
-package predicate;
+package me.predicate;
 
-import domain.GameStatus;
-import domain.InputNumbers;
-import predicate.impl.BallPredicate;
-import predicate.impl.OutPredicate;
-import predicate.impl.StrikePredicate;
+import me.domain.GameStatus;
+import me.domain.InputNumbers;
+import me.predicate.impl.BallPredicate;
+import me.predicate.impl.OutPredicate;
+import me.predicate.impl.StrikePredicate;
 
 import java.util.List;
 

@@ -1,4 +1,6 @@
-import domain.InputNumbers;
+package me;
+
+import me.domain.InputNumbers;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;

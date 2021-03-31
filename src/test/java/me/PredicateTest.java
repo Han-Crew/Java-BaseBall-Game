@@ -1,5 +1,7 @@
-import domain.GameStatus;
-import domain.InputNumbers;
+package me;
+
+import me.domain.GameStatus;
+import me.domain.InputNumbers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
@@ -7,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import predicate.ScoreValidator;
+import me.predicate.ScoreValidator;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;

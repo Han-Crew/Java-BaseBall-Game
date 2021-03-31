@@ -1,9 +1,9 @@
-package predicate.impl;
+package me.predicate.impl;
 
-import domain.BaseBallNumbers;
-import domain.GameStatus;
-import domain.InputNumbers;
-import predicate.ScorePredicate;
+import me.domain.BaseBallNumbers;
+import me.domain.GameStatus;
+import me.domain.InputNumbers;
+import me.predicate.ScorePredicate;
 
 public class OutPredicate implements ScorePredicate {
     private final BaseBallNumbers baseBallNumbers = BaseBallNumbers.getInstance();
